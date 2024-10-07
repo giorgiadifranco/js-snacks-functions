@@ -2,7 +2,11 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-let  nomi = names.map(myFunction);
+const newNames = names.flatMap(name => [name.charAt(0)])
+
+console.log(newNames);
+
+
 
 //let lunghezzaNomi = nomi.length
 
@@ -12,15 +16,25 @@ const numbers2 = numbers1.map(myFunction);
 function myFunction(value, index, array) {
   return value * 2;
 }*/
+let initialName = []
+function initialLetter(){
+    
+   
+    
 
-
-for (i = 0; 0 > lunghezzaNomi; i--){
-        //let name = names.length[i];
-        //console.log(name);
-
-
+    for (i = 0; 0 < names.lenght; i--){
+    let firstLetter = names[i].charAt(0);
+    initialName.push()
+    return initialName;
     }
-        
+   
+} console.log(initialLetter(initialName));
+
+
+
+   
+   
+
 
 
 // Dichiara la funzione qui.
