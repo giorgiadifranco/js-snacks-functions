@@ -2,9 +2,9 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-const newNames = names.flatMap(name => [name.charAt(0)])
+//const newNames = names.flatMap(name => [name.charAt(0)]) --->The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
 
-console.log(newNames);
+//console.log(newNames);
 
 
 
@@ -16,19 +16,21 @@ const numbers2 = numbers1.map(myFunction);
 function myFunction(value, index, array) {
   return value * 2;
 }*/
-let initialName = []
-function initialLetter(){
-    
-   
-    
 
-    for (i = 0; 0 < names.lenght; i--){
-    let firstLetter = names[i].charAt(0);
-    initialName.push()
-    return initialName;
+
+function initialLetter(names){
+    const newNames = []; 
+
+    for(let i = 0; i < names.length; i++){
+
+        
+        let firstLetter = names[i].charAt(0);
+        newNames.push(firstLetter)
     }
    
-} console.log(initialLetter(initialName));
+    return newNames
+} 
+console.log(initialLetter(names));
 
 
 
